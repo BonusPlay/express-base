@@ -1,0 +1,20 @@
+{
+  "name": "express-base",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "NODE_ENV=production nodemon ./bin/www",
+    "test": "NODE_ENV=development DEBUG=* nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-session": "^1.15.2",
+    "express-subdomain": "^1.0.5",
+    "morgan": "~1.8.1",
+    "pug": "~2.0.0-beta11",
+    "serve-favicon": "~2.4.2"
+  }
+}
