@@ -5,6 +5,8 @@ router.get('/', function (req, res) {
 	res.send('Welcome to express-base api');
 });
 
+router.use('/example', require('../models/example'));
+
 router.all('*', function (req, res) {
 	res.status(404).send('API interface not found');
 });
