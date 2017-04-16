@@ -9,3 +9,7 @@ Feel free to use. Check other branches for different combinations.
  - add favicon to `/public/favicon.ico` and uncomment line #16 in `/app.js`
  - run production with `npm start`
  - run development with `npm test`
+ - update `/config/index.js`
+ - model goes to `/models/<name>/<name>.model.js`
+ - controller goes to `/models/<name>/<name>.controller.js`
+ - router goes to `/models/<name>/index.js`
