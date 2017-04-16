@@ -1,8 +1,10 @@
 var path            = require('path');
 var logger          = require('morgan');
+var config 			= require('./config');
 
 var express         = require('express');
 var session 		= require('express-session');
+var MySQLStore 		= require('express-mysql-session')(session);
 var subdomain       = require('express-subdomain');
 var favicon         = require('serve-favicon');
 var cookieParser    = require('cookie-parser');
@@ -22,6 +24,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser('secret'));
 app.use(session({
 	secret: 'secret',
+	store: new MySQLStore(config.store),
+	saveUninitialized: true,
+	resave: false,
 	cookie: {
 		maxAge: 60000
 	}

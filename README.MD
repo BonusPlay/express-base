@@ -8,6 +8,6 @@ Feel free to use. Check other branches for different combinations.
  - rename project in `/package.json`
  - add favicon to `/public/favicon.ico` and uncomment line #16 in `/app.js`
  - change secrets in `/app.js` line #22 & #24
- - implement storage for session in `/app.js` line #23
+ - change config in `/config/index.js`
  - run production with `npm start`
  - run development with `npm test`
